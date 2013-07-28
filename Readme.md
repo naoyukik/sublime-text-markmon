@@ -14,13 +14,20 @@ Adapted from the excellent [Github for mac](https://github.com/csytan/sublime-te
 
 * Install [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
 * Select "Package Control: Install Package" from the Command Palette (⌘⇧P)
-* Find "Marked" and select
+* Find "Marked.app Menu" and select
 
 **Manually:**
 
 * Install [Marked.app](http://markedapp.com/) ([App Store](http://itunes.apple.com/us/app/marked/id448925439?ls=1&mt=12))
 * Download [sublime-text-2-marked](https://github.com/icio/sublime-text-2-marked/zipball/master) and copy unzipped folder to your Sublime Text packages folder (Sublime Text → Preferences → Browse Packages...)
 * Restart Sublime Text
+
+```bash
+# For Sublime Text 2
+cd ~/Library/Application Support/Sublime Text 2/Packages
+mkdir Marked.app\ Menu
+curl -L https://github.com/icio/sublime-text-2-marked/tarball/master | tar --strip-components 1 -C Marked.app\ Menu -xvf -
+```
 
 
 ## Usage
