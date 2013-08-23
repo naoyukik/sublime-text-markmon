@@ -8,6 +8,8 @@ import sublime_plugin
 class MarkedCommand(sublime_plugin.WindowCommand):
     def run(self):
         filename = self.window.active_view().file_name()
+        if filename is None:
+            return
 
         proc_env = os.environ.copy()
         encoding = sys.getfilesystemencoding()
