@@ -3,6 +3,8 @@ Sublime Text 2/3 - Marked App Menu plugin
 
 Adds a handy menu item that opens [Marked.app](http://markedapp.com/).
 
+**Issues:** https://github.com/icio/sublime-text-marked/issues
+
 ![screenshot](http://i.imgur.com/oCEb7.jpg)
 
 Adapted from the excellent [Github for mac](https://github.com/csytan/sublime-text-2-github) plugin for Sublime Text by Chris Tan. Originally developed by [jocelynmallon](https://github.com/jocelynmallon), now supported by [icio](https://github.com/icio).
