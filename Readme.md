@@ -38,6 +38,14 @@ With the view selected containing the file you wish to preview in Marked:
 
 * Select "Marked" from the Command Palette (⌘⇧P)
 
+**Keyboard Shortcut:**
+
+* Add the following to your User Key Binding, adjusting the key configuration to taste:
+
+    ```json
+    { "keys": ["super+alt+m"], "command": "marked" }
+    ```
+
 **Menus:**
 
 * Select Tools → Marked
