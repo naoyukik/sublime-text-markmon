@@ -1,5 +1,5 @@
-Sublime Text 2/3 - Marked.app menu plugin
-===============================================
+Sublime Text 2/3 - Marked App Menu plugin
+=========================================
 
 Adds a handy menu item that opens [Marked.app](http://markedapp.com/).
 
