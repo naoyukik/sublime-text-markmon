@@ -19,12 +19,6 @@ Note that markmon relies on [Node.js](http://nodejs.org).
 Markmon does not come with its own markdown converter so you will need to install your own. I recommend [pandoc](http://johnmacfarlane.net/pandoc/installing.html). **Currently mathjax
 support is limited to pandoc only.**
 
-## New Section
-
-Math:
-
-$$ \sum\limits_{k=1}^{100}=5050 $$
-
 ## Installation Instructions
 
 **Package Installer:**
