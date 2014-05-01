@@ -1,6 +1,16 @@
 [
     {
-        "caption": "Marked",
-        "command": "marked"
+        "caption": "Markmon launch",
+        "command": "markmon_toggle", "args":
+        {
+            "enable": true
+        }
+    },
+    {
+        "caption": "Markmon exit",
+        "command": "markmon_toggle", "args":
+        {
+            "enable": false
+        }
     }
 ]

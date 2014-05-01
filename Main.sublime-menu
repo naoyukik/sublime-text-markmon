@@ -4,8 +4,26 @@
         "children":
         [
             {
-                "caption": "Marked",
-                "command": "marked"
+                "id": "markmon",
+                "caption": "markmon",
+                "children":
+                [
+                    {
+                        "caption": "Launch",
+                        "command": "markmon_toggle", "args":
+                        {
+                            "enable": true
+                        }
+                    },
+                    {
+                        "caption": "Exit",
+                        "command": "markmon_toggle", "args":
+                        {
+                            "enable": false
+                        }
+
+                    }
+                ]
             }
         ]
     }
