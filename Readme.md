@@ -3,6 +3,8 @@
 SublimeText 3 integration with [Markmon](https://github.com/yyjhao/markmon)
 for real-time markdown preview with mathjax support.
 
+![markmon](http://yjyao.com/images/markmon.gif)
+
 ## Important note
 
 You have to install [Markmon](https://github.com/yyjhao/markmon) separately for
@@ -16,6 +18,12 @@ Note that markmon relies on [Node.js](http://nodejs.org).
 
 Markmon does not come with its own markdown converter so you will need to install your own. I recommend [pandoc](http://johnmacfarlane.net/pandoc/installing.html). **Currently mathjax
 support is limited to pandoc only.**
+
+## New Section
+
+Math:
+
+$$ \sum\limits_{k=1}^{100}=5050 $$
 
 ## Installation Instructions
 
