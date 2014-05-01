@@ -1,4 +1,69 @@
 [
+     {
+        "caption": "Preferences: Markmon Settings – Default",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/sublime-text-markmon/sublime-text-markmon.sublime-settings"
+        }
+    },
+    {
+        "caption": "Preferences: Markmon Settings – User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/sublime-text-markmon.sublime-settings"
+        }
+    },
+
+    {
+        "caption": "Preferences: Markmon Key Bindings – Default",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/sublime-text-markmon/Default (OSX).sublime-keymap",
+            "platform": "OSX"
+        }
+    },
+    {
+        "caption": "Preferences: Markmon Key Bindings – User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/Default (OSX).sublime-keymap",
+            "platform": "OSX"
+        }
+    },
+
+    {
+        "caption": "Preferences: Markmon Key Bindings – Default",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/sublime-text-markmon/Default (Linux).sublime-keymap",
+            "platform": "Linux"
+        }
+    },
+    {
+        "caption": "Preferences: Markmon Key Bindings – User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/Default (Linux).sublime-keymap",
+            "platform": "Linux"
+        }
+    },
+
+    {
+        "caption": "Preferences: Markmon Key Bindings – Default",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/sublime-text-markmon/Default (Windows).sublime-keymap",
+            "platform": "Windows"
+        }
+    },
+    {
+        "caption": "Preferences: Markmon Key Bindings – User",
+        "command": "open_file", "args":
+        {
+            "file": "${packages}/User/Default (Windows).sublime-keymap",
+            "platform": "Windows"
+        }
+    },
     {
         "caption": "Markmon launch",
         "command": "markmon_toggle", "args":
