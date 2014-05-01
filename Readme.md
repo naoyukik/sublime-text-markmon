@@ -1,14 +1,21 @@
-Sublime Text 2/3 - Marked App Menu plugin
-=========================================
+# Sublime Text 3 - Markmon
 
-Adds a handy menu item that opens [Marked.app](http://markedapp.com/).
+SublimeText 3 integration with [Markmon](https://github.com/yyjhao/markmon)
+for real-time markdown preview with mathjax support.
 
-**Issues:** https://github.com/icio/sublime-text-marked/issues
+## Important note
 
-![screenshot](http://i.imgur.com/oCEb7.jpg)
+You have to install [Markmon](https://github.com/yyjhao/markmon) separately for
+this plugin to work. You can do so by
 
-Adapted from the excellent [Github for mac](https://github.com/csytan/sublime-text-2-github) plugin for Sublime Text by Chris Tan. Originally developed by [jocelynmallon](https://github.com/jocelynmallon), now supported by [icio](https://github.com/icio).
+```bash
+npm install -g markmon
+```
 
+Note that markmon relies on [Node.js](http://nodejs.org).
+
+Markmon does not come with its own markdown converter so you will need to install your own. I recommend [pandoc](http://johnmacfarlane.net/pandoc/installing.html). **Currently mathjax
+support is limited to pandoc only.**
 
 ## Installation Instructions
 
@@ -16,38 +23,33 @@ Adapted from the excellent [Github for mac](https://github.com/csytan/sublime-te
 
 * Install [Sublime Package Control](http://wbond.net/sublime_packages/package_control)
 * Select "Package Control: Install Package" from the Command Palette (⌘⇧P)
-* Find "Marked.app Menu" and select
+* Find "Markmon" and select
 
 **Manually:**
 
-* Install [Marked.app](http://markedapp.com/) ([App Store](http://itunes.apple.com/us/app/marked/id448925439?ls=1&mt=12))
-* Download [sublime-text-marked](https://github.com/icio/sublime-text-marked/zipball/master) and copy unzipped folder to your Sublime Text packages folder (Sublime Text (2) → Preferences → Browse Packages...)
+* Download [sublime-text-markmon](https://github.com/yyjhao/sublime-text-markmon/archive/master.zip) and copy unzipped folder to your Sublime Text packages folder (Sublime Text → Preferences → Browse Packages...)
 * Restart Sublime Text
-
-```bash
-# For Sublime Text 2
-cd ~/Library/Application Support/Sublime Text 2/Packages
-mkdir Marked.app\ Menu
-curl -L https://github.com/icio/sublime-text-marked/tarball/master | tar --strip-components 1 -C Marked.app\ Menu -xvf -
-```
-
 
 ## Usage
 
-With the view selected containing the file you wish to preview in Marked:
+First note that markmon only watches your views with markdown syntax, so be sure
+to check the syntax setting.
 
 **Command Palette:**
 
-* Select "Marked" from the Command Palette (⌘⇧P)
+* Select "Markmon launch" from the Command Palette (⌘⇧P)
 
 **Keyboard Shortcut:**
 
-* Add the following to your User Key Binding, adjusting the key configuration to taste:
-
-    ```json
-    { "keys": ["super+alt+m"], "command": "marked" }
-    ```
+You can check the default short cut by going to Sublime Text → Preferences →
+Package Settings → Markmon → Key Bindings - Default.
 
 **Menus:**
 
-* Select Tools → Marked
+* Select Tools → markmon
+
+## Acknowledgment
+
+I use [sublime-text-marked](https://github.com/icio/sublime-text-marked) and
+[SublimeLinter3](https://github.com/SublimeLinter/SublimeLinter3) as templates
+for this plugin.
