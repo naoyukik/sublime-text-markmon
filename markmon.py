@@ -1,3 +1,5 @@
+# coding=utf8
+
 import sublime
 import time
 import sublime_plugin
@@ -95,7 +97,7 @@ class MarkmonClient:
          if self.settings.running and MARKDOWN_SYNTAX.match(view.scope_name(0)):
             try:
                 connection = http.client.HTTPConnection(self.settings.client_url)
-                connection.request('PUT', '/', view.substr(sublime.Region(0, view.size())))
+                connection.request('PUT', '/', view.substr(sublime.Region(0, view.size())).encode('utf-8'))
                 connection.getresponse()
             except ConnectionRefusedError:
                 if self.server:
