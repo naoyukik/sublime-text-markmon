@@ -1,0 +1,6 @@
+{
+    "port": 3002,
+    "command": "pandoc -t HTML5",
+    "stylesheet": null,
+    "projectdir": null
+}
