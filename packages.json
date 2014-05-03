@@ -1,8 +1,8 @@
 {
-    "schema_version": "0.1",
+    "schema_version": "0.0.1",
     "packages": [
         {
-            "name": "Markmon Markdown + Mathjax Preview",
+            "name": "Markmon: real-time markdown preview",
             "author": "Yao Yujian",
             "description": "Markmon integration with SublimeText for real-time pandoc/markdown preview, with Mathjax support",
             "homepage": "https://github.com/yyjhao/sublime-text-markmon",
