@@ -19,6 +19,11 @@ Note that markmon relies on [Node.js](http://nodejs.org).
 Markmon does not come with its own markdown converter so you will need to install your own. I recommend [pandoc](http://johnmacfarlane.net/pandoc/installing.html). **Currently mathjax
 support is limited to pandoc only.**
 
+If you want to customize your pandoc parameters or use a converter other than
+pandoc, go to  Sublime Text → Preferences → Package Settings → Markmon →
+Settings(User) and update the 'command' parameter according to
+Settings(Default). More information about the parameters can be found in the documentation for [Markmon](https://github.com/yyjhao/markmon).
+
 ## Installation Instructions
 
 **Package Installer:**
