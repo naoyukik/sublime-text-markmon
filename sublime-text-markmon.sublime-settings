@@ -1,6 +1,6 @@
 {
     "port": 3002,
-    "command": "pandoc -t HTML5",
+    "command": "pandoc -t HTML5 --mathjax",
     "stylesheet": null,
     "projectdir": null
 }
