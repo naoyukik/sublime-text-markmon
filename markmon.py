@@ -65,6 +65,7 @@ class MarkmonSettings:
 
     def update(self, settings):
         self.settings = {
+            "executable": settings.get("executable", 'markmon'),
             "port": settings.get("port", 3000),
             "command": settings.get("command", "pandoc -t HTML5"),
             "stylesheet": settings.get("stylesheet", None),
@@ -74,7 +75,7 @@ class MarkmonSettings:
 
     def build_strings(self):
         self.client_url = "localhost:{:d}".format(self.settings['port'])
-        self.server_command = ['markmon',
+        self.server_command = [self.settings["executable"],
                                     "--port", str(self.settings['port']),
                                     "--command", self.settings['command']]
         if self.settings['stylesheet']:
@@ -125,7 +126,12 @@ class MarkmonServer:
         env = os.environ.copy()
         betterenv = util.create_environment()
         env["PATH"] = betterenv["PATH"]
-        subprocess.Popen(self.settings.server_command, env=env)
+        try:
+            subprocess.Popen(self.settings.server_command, env=env)
+        except FileNotFoundError as e:
+            print("Markmon Server failed to initialize. Confirm executable path is correct in Markmon Setting. Command used:")
+            print(self.settings.server_command)
+            raise
 
     def cleanup_server(self):
         if self.server_url:
