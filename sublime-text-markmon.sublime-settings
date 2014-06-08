@@ -1,4 +1,7 @@
 {
+    //On Windows try "markmon.cmd" if you get errors.
+    //If markmon is not on your path you'll need to use a full path to it
+    "executable": "markmon",
     "port": 3002,
     "command": "pandoc -t HTML5 --mathjax",
     "stylesheet": null,
