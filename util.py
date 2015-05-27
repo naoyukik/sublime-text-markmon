@@ -269,6 +269,11 @@ def create_environment():
     if paths:
         env['PATH'] = os.pathsep.join(paths) + os.pathsep + env['PATH']
 
+    pandoc = sublime.load_settings(
+        'sublime-text-markmon.sublime-settings').get("pandoc_path", None)
+    if pandoc:
+        env['PATH'] = pandoc + os.pathsep + env['PATH']
+
     # Many linters use stdin, and we convert text to utf-8
     # before sending to stdin, so we have to make sure stdin
     # in the target executable is looking for utf-8.

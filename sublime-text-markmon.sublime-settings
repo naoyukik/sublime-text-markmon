@@ -3,6 +3,7 @@
     //If markmon is not on your path you'll need to use a full path to it
     "executable": "markmon",
     "port": 3002,
+    "pandoc_path": "",
     "command": "pandoc -t HTML5 --mathjax",
     "stylesheet": null,
     "projectdir": null
